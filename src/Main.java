@@ -103,7 +103,6 @@ public class Main {
             System.out.println("Число " + three + " самое большое из всех предложенных.");
         }
 
-
     }
 }
 
