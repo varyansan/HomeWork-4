@@ -56,7 +56,7 @@ public class Main {
         int childAge = 4;
 
         boolean youngAge = childAge < 5;
-        boolean averageAge = childAge > 5 && childAge < 14;
+        boolean averageAge = childAge >= 5 && childAge <= 14;
         boolean oldAge = childAge > 14;
 
         if (youngAge) {
@@ -72,19 +72,16 @@ public class Main {
         }
 
         System.out.println("Задание №6");
-        int numberOfPersons = 50;
+        int numberOfPersons = 70;
         int carriageCapacity = 102;
         int seatPlace = 60;
 
-        if (numberOfPersons < carriageCapacity) {
-            System.out.println("Места в вагоне есть!");
-        } else {
-            System.out.println("Мест в вагоне нет!");
-        }
-        if (numberOfPersons > seatPlace) {
+        if (numberOfPersons <= seatPlace) {
+            System.out.println("Есть сидячие места.");
+        } else if (numberOfPersons > seatPlace && numberOfPersons < carriageCapacity){
             System.out.println("Остались только стоячие места.");
         } else {
-            System.out.println("Есть сидячие места.");
+            System.out.println("Мест в вагоне нет!");
         }
 
         System.out.println("Задание №7");
